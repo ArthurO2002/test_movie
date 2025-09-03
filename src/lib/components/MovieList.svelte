@@ -4,6 +4,7 @@
 	import CarouselContainer from '$lib/components/ui/carousel/CarouselContainer.svelte';
 	import CarouselItem from '$lib/components/ui/carousel/CarouselItem.svelte';
 	import StarRating from '$lib/components/ui/rating/StarRating.svelte';
+	import arrowRight from '$lib/images/arrowRight.svg';
 
 	export let title: string;
 	export let list: IMovie[];
@@ -14,7 +15,12 @@
 </script>
 
 <div class="py-2.5">
-	<h3 class="text-xl font-semibold">{title}</h3>
+	<div class="flex justify-between">
+		<h3 class="text-xl font-semibold">{title}</h3>
+		<div class="cursor-pointer">
+			<img src={arrowRight} alt="ArrowRight" />
+		</div>
+	</div>
 	{#if list && list.length === 0}
 		<div class="flex flex-col items-center justify-center px-4 py-16">
 			<div class="text-center">
