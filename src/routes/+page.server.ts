@@ -1,6 +1,6 @@
 export async function load() {
 	// TODO: I'm hardcoding the API key here just to have minimal setup, but here we should use some env variable
-	// Note: It's safe to hardcode the API key here because it's only used in this file and the file is not exposed to the client
+	// Note: It's safe to have the API key here because it's only used in this file and the file is not exposed to the client
 	const BASE_URL = 'https://api.themoviedb.org/3';
 
 	try {

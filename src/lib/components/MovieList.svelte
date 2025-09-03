@@ -5,12 +5,13 @@
 	import CarouselItem from '$lib/components/ui/carousel/CarouselItem.svelte';
 	import StarRating from '$lib/components/ui/rating/StarRating.svelte';
 	import arrowRight from '$lib/images/arrowRight.svg';
+	import { goto } from '$app/navigation';
 
 	export let title: string;
 	export let list: IMovie[];
 
 	function handleMovieClick(movie: IMovie) {
-		console.log('Movie clicked:', movie.title);
+		goto(`movie/${movie.id}`);
 	}
 </script>
 

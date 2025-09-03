@@ -28,7 +28,9 @@
 
     --color-background-default: #1f1f29;
     --color-background-input: #131316;
+    --color-background-chip: #312F35;
 
+    --color-secondary-default: #ff0000ba;
     --color-secondary-50: #f9fafb;
     --color-secondary-100: #f3f4f6;
     --color-secondary-200: #e5e7eb;
@@ -60,6 +62,7 @@
     --color-error-500: #ef4444;
 
     --color-rating-default: #ffff00;
+    --color-rating-100: #f5c518;
 
     --color-text-default: var(--color-primary-default);
 }
