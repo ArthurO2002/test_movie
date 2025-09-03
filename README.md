@@ -1,38 +1,96 @@
-# sv
+# Movie Explorer
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A modern web application for browsing and exploring movies using The Movie Database (TMDB) API. Built with Svelte and TailwindCSS.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Movie Browsing**: Browse popular and top-rated movies
+- **Movie Details**: View comprehensive details about each movie including:
+  - Title, poster, and backdrop images
+  - Runtime and release date
+  - Genres and ratings
+  - Plot overview
+  - Cast information
+- **Filtering System**: Filter movies by:
+  - Genre
+  - Release year
+  - Title search
+- **Responsive UI**: Optimized for various screen sizes
+- **Interactive Elements**:
+  - Expandable text for movie descriptions
+  - Carousel displays for movies and cast members
+  - Star ratings
+  - Navigation between movie lists and details
 
-```sh
-# create a new project in the current directory
-npx sv create
+## Technologies Used
 
-# create a new project in my-app
-npx sv create my-app
-```
+- **Frontend Framework**: Svelte 5
+- **Styling**: TailwindCSS 4
+- **UI Components**:
+  - Embla Carousel for smooth scrolling carousels
+  - Custom UI components (buttons, chips, ratings)
+- **API Integration**: The Movie Database (TMDB) API
+- **Build Tools**: Vite
+- **Type Safety**: TypeScript
 
-## Developing
+## Installation
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+1. Clone the repository:
+   ```sh
+   git clone git@github.com:ArthurO2002/test_movie.git
+   cd test-movie
+   ```
 
-```sh
-npm run dev
+2. Install dependencies:
+   ```sh
+   npm install
+   # or
+   yarn
+   # or
+   pnpm install
+   ```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+3. Start the development server:
+   ```sh
+   npm run dev
+   # or
+   npm run dev -- --open
+   ```
 
-## Building
+## Usage
 
-To create a production version of your app:
+- The home page displays popular and recommended movies
+- Use the filter section to narrow down movies by genre, year, or title
+- Click on any movie to view its detailed information
+- Navigate back using the back button on the movie detail page
+
+## Building for Production
+
+To create a production version of the app:
 
 ```sh
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+You can preview the production build with:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```sh
+npm run preview
+```
+
+## Project Structure
+
+- `/src/routes`: Page components and routing
+- `/src/lib/components`: Reusable UI components
+- `/src/types`: TypeScript interfaces for data structures
+- `/src/constants`: API endpoints and constants
+
+## Acknowledgements
+
+- Movie data provided by [The Movie Database (TMDB)](https://www.themoviedb.org/)
+- Icons and images from Figma
+
+## Live Demo
+
+The app is deployed on Vercel:  
+👉 [Movie App on Vercel](https://test-movie-five.vercel.app/)
