@@ -59,6 +59,8 @@
     --color-warning-500: #f59e0b;
     --color-error-500: #ef4444;
 
+    --color-rating-default: #ffff00;
+
     --color-text-default: var(--color-primary-default);
 }
 
